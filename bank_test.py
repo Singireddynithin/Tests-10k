@@ -85,7 +85,7 @@ class SavingsAccount(BankAccount):
             print("Invalid PIN ")
             return
         self._set_balance(self._get_balance() - amount)
-        print(f"Withdrawal successful ✅ New balance: ₹{self._get_balance()}")
+        print(f"Withdrawal successful  New balance: ₹{self._get_balance()}")
 
 class BusinessAccount(BankAccount):
     def __init__(self, name, balance, pin, overdraft_limit=50000, loan_limit=100000):
